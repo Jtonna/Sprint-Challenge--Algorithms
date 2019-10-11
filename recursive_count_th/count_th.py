@@ -14,13 +14,16 @@ def count_th(word, count = 0):
     if len(word) <= 1:
         return count
     
-    #  Slices the last 2 letters off of the passed in parameter (word)
+    #  Slices the first 2 letters off of the passed in parameter (word)
     the_word = word[2:]
 
     #  If the "word" array index position 0 is a "t" AND position 1 is an "h" we can do something
     if word[0] == "t" and word[1] == "h":
         #  The something we are going to do is increment count + 1 since "th" was found
         count + 1
+        #  Then we will return the rest of the_word (excluding the two indexes we proccessed) to the function as well as the new value of count
+        return count_th(the_word, count)
+
 
     pass
     
