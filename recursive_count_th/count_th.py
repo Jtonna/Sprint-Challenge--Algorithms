@@ -40,5 +40,5 @@ def count_th(word, count = 0):
     else:
         return count_th(the_word, count)
 
-# print(count_th("ttttth"))
+print(count_th("thThTHtheresof"))
     
