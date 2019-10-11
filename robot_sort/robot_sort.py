@@ -134,7 +134,14 @@ class SortingRobot:
         else:
             self.swap_item()
 
-            #   If the light is on we need to move left & then turn off the light 
+            #   If the light is on we need to move left & then turn off the light
+            if self.light_is_on():
+                #  Move left ONLY if we can move left, things break if we dont check first
+                while self.can_move_left():
+                    self.move_left()
+                # Now we can turn off the light and continue
+            
+
                 
 
 
