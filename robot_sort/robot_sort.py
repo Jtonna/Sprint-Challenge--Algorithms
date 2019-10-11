@@ -140,6 +140,10 @@ class SortingRobot:
                 while self.can_move_left():
                     self.move_left()
                 # Now we can turn off the light and continue
+                self.set_light_off()
+                #  Recursion
+                self.sort()
+
             
 
                 
