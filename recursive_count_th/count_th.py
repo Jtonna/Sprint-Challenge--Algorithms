@@ -25,7 +25,11 @@ def count_th(word, count = 0):
         return count_th(the_word, count)
     #  If word[0] is not t, we need to do something
     elif word[0] != "t":
-        pass
+        """What were going to do is set the_word to the whole current (mutated) array minus the
+        first letter as well as the current count so it doesnt get reset by the default value we spefified
+        """
+        the_word = word[1:]
+        return count_th(the_word, count)
 
     else:
         pass
