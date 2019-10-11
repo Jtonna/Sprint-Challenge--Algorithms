@@ -30,9 +30,9 @@ def count_th(word, count = 0):
         """
         the_word = word[1:]
         return count_th(the_word, count)
-
+    # Once theres nothing left to do we are just going to return the_word and the current count
     else:
-        pass
+        return count_th(the_word, count)
 
-    pass
+print(count_th("ThTHTHTHtheieugbthTHtheikdbgtheingerthief"))
     
