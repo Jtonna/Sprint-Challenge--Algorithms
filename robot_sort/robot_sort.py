@@ -111,9 +111,12 @@ class SortingRobot:
 
         while self.can_move_right():
             self.move_right()
+
+            #  If the robot compares the item and its 1 do things
             if self.compare_item() == 1:
+                # We need to turn the light on, swap item, move left, swap the item, move right & swap the item
                 self.set_light_on()
-                
+
 
 
 if __name__ == "__main__":
