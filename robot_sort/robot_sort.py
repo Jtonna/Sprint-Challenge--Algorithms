@@ -116,6 +116,14 @@ class SortingRobot:
             if self.compare_item() == 1:
                 # We need to turn the light on, swap item, move left, swap the item, move right & swap the item
                 self.set_light_on()
+                self.swap_item()
+                self.move_left()
+                self.swap_item()
+                self.move_right()
+                self.swap_item()
+            else:
+                #  If the item isnt = 1 we need to move left, swap, move right & swap
+                
 
 
 
