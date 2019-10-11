@@ -23,7 +23,12 @@ def count_th(word, count = 0):
         count + 1
         #  Then we will return the rest of the_word (excluding the two indexes we proccessed) to the function as well as the new value of count
         return count_th(the_word, count)
+    #  If word[0] is not t, we need to do something
+    elif word[0] != "t":
+        pass
 
+    else:
+        pass
 
     pass
     
