@@ -93,11 +93,20 @@ class SortingRobot:
         return self._light == "ON"
 
     def sort(self):
-        """
-        Sort the robot's list.
+        """Plan to Sort the robot's list.
+        Since the initial steps are the robot being able to move right and left we should use a while loop we also have to
+        Take in to account the original index position of 0 and get the object in its hand to start sorting things from the l array to the r array
+
+        While <robot can move right>
+            <do these>
+            if <thing> is bigger:
+                do thing
+            
+        
+        Once the robot cant move right anymore he should be theoretically at the end of the array.
+        We need a way to see if 
         """
         # Fill this out
-        pass
 
 
 if __name__ == "__main__":
