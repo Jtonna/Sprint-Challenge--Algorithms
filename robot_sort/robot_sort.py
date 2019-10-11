@@ -144,12 +144,6 @@ class SortingRobot:
                 #  Recursion
                 self.sort()
 
-            
-
-                
-
-
-
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
