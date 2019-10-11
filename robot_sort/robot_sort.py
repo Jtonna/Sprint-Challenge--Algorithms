@@ -107,6 +107,13 @@ class SortingRobot:
         We need a way to see if 
         """
         # Fill this out
+        self.swap_item()
+
+        while self.can_move_right():
+            self.move_right()
+            if self.compare_item() == 1:
+                self.set_light_on()
+                
 
 
 if __name__ == "__main__":

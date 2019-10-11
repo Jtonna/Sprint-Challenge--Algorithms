@@ -22,6 +22,7 @@ def count_th(word, count = 0):
         #  The something we are going to do is increment count + 1 since "th" was found
         count += 1
         #  Then we will return the rest of the_word (excluding the two indexes we proccessed) to the function as well as the new value of count
+        print(f'reger {count}')
         return count_th(the_word, count)
     #  If word[0] is not t, we need to do something
     elif word[0] != "t":
@@ -34,5 +35,5 @@ def count_th(word, count = 0):
     else:
         return count_th(the_word, count)
 
-# print(count_th("ThTHTHTHtheieugbthTHtheikdbgtheingerthief"))
+print(count_th("thhtthht"))
     
