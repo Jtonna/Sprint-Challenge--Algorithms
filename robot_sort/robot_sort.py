@@ -109,20 +109,32 @@ class SortingRobot:
         # Fill this out
         self.swap_item()
 
+        # function that moves left, swaps, moves right, swaps because im lazy and want to save reading space
+        def move_n_swap():
+                self.move_left()
+                self.swap_item()
+                self.move_right()
+                self.swap_item()
+
+
         while self.can_move_right():
             self.move_right()
 
             #  If the robot compares the item and its 1 do things
             if self.compare_item() == 1:
-                # We need to turn the light on, swap item, move left, swap the item, move right & swap the item
+                # We need to turn the light on, swap item, move left, swap the item, move right & swap the item (calls move_n_swap function)
                 self.set_light_on()
                 self.swap_item()
-                self.move_left()
-                self.swap_item()
-                self.move_right()
-                self.swap_item()
+                move_n_swap()
             else:
-                #  If the item isnt = 1 we need to move left, swap, move right & swap
+                #  If the item isnt = 1 we need to move left, swap, move right & swap (calls move_n_swap function)
+                move_n_swap()
+        
+        #  If we cant move right we have to do this
+        else:
+            self.swap_item()
+
+            #   If the light is on we need to move left & then turn off the light 
                 
 
 
