@@ -2,13 +2,13 @@
 
 ## Exercise I
 
-a)
+a) O(n) as the only iteration it has is itself
 
 
-b)
+b) O(n ^2) as it has two iterations, for loop -> while loop
 
 
-c)
+c) This is recursive and I believe its O(2 +n!)
 
 ## Exercise II
 
